@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="box">
+        <div class="input">
+            <h6 class="label">Enter Height (in px)</h6>
+            <input type="number" name="height" id="height">
+            <h6 class="label">Enter width</h6>
+
+            <input type="number" name="width" id="width">
+            <input type="submit" id="submit" value="Submit" style="margin-top: 10px;">
+        </div>
+        <div class="border-box" id="border-box"></div>
+        <div class="slidecontainer">
+            <input type="range" min="1" max="100" value="50" class="slider" id="myRange">
+        </div>
+        <div class="center">
+            <span class="text">Border Radius:</span> <span id="output"></span>
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
